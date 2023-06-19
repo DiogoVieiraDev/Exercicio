@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InfraData</title>
+    <link rel="icon" href="./img/icon-57x57.png" type="image/png">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <ul class="header">
+            <li><a href="#inteligencia-consumo">Inteligencia de Consumo</a></li>
+            <li><a href="#inteligencia-abastecimento">Inteligencia de Abastecimento</a></li>
+            <li><a href="#inteligencia-ecommerce">Inteligencia de E-Commerce</a></li>
+            <li><a href="#customer-data-platform">Customer Data Platform</a></li>
+            <li><a href="#inteligencia-full-commerce">Inteligencia Full Commerce</a></li>
+        </ul>
+        <div class="abaLateral">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <img src="./img/logoinfradata.png" alt="Logo INFRA Data" class="logo">
+    </header>
+
+    <main class="container">
+        <section class="caracteristicas">
+            <div class="descricao" id="inteligencia-consumo">
+                <img src="./img/inteli.png" alt="Inteligência de Consumo">
+                <h2>INTELIGÊNCIA DE CONSUMO</h2>
+                <ul>
+                    <li>Previsão de demanda para até 3 meses</li>
+                    <li>Planejamento da demanda com sazonalidade</li>
+                    <li>Elasticidade de preço</li>
+                </ul>
+            </div>
+
+            <div class="descricao" id="inteligencia-abastecimento">
+                <img src="./img/abastecimento.png" alt="Inteligência de Abastecimento">
+                <h2>INTELIGÊNCIA DE ABASTECIMENTO</h2>
+                <ul>
+                    <li>Redução de perdas e stock out</li>
+                    <li>Indicadores de ruptura e cobertura</li>
+                    <li>Dados para obter abastecimento ideal</li>
+                    <li>Basket Analysis</li>
+                </ul>
+            </div>
+
+            <div class="descricao" id="inteligencia-ecommerce">
+                <img src="./img/ecommerce.png" alt="Inteligência de E-commerce">
+                <h2>INTELIGÊNCIA DE E-COMMERCE</h2>
+                <ul>
+                    <li>Vitrine infinita e recomendações</li>
+                    <li>Melhor experiência de busca com pesquisa com inteligência AI de linguagem natural</li>
+                    <li>Gestão de supply chain facilitada</li>
+                </ul>
+            </div>
+
+            <div class="descricao" id="customer-data-platform">
+                <img src="./img/customerpl.png" alt="Customer Data Platform">
+                <h2>CUSTOMER DATA PLATFORM</h2>
+                <ul>
+                    <li>Rastreabilidade de comportamento</li>
+                    <li>Clusterização de comportamento</li>
+                    <li>Dados sobre impactos de campanha</li>
+                    <li>Processamento de sentimento de redes sociais</li>
+                </ul>
+            </div>
+
+            <div class="descricao" id="inteligencia-full-commerce">
+                <img src="./img/fullcommerce.png" alt="Inteligência Full Commerce">
+                <h2>INTELIGÊNCIA FULL COMMERCE</h2>
+                <ul>
+                    <li>Acesso direto aos dados</li>
+                    <li>Conexão com outros BI's</li>
+                    <li>Visões prontas e personalizadas em Power BI</li>
+                    <li>Advanced search</li>
+                    <li>Behavioral targeting</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="info-section">
+            <div class="info-container">
+                <button class="info-button">Solicitar informações</button>
+            </div>
+
+            <div class="form-container" id="form-container" style="display: none;">
+                <form action="./obrigado.html" method="post" onsubmit="return validateForm()">
+                    <label for="primeiro-nome">Primeiro Nome</label>
+                    <input type="text" id="primeiro-nome" name="primeiro-nome" required>
+
+                    <label for="sobrenome">Sobrenome</label>
+                    <input type="text" id="sobrenome" name="sobrenome" required>
+
+                    <label for="empresa">Empresa</label>
+                    <input type="text" id="empresa" name="empresa" required>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="telefone">Telefone</label>
+                    <input type="tel" id="telefone" name="telefone" required>
+
+                    <label for="como-ajudar">Como podemos ajudar?</label>
+                    <textarea id="como-ajudar" name="como-ajudar" rows="4" required></textarea>
+
+                    <label for="contato">Qual contato deseja receber?</label>
+                    <select id="contato" name="contato" required>
+                        <option value="email">Email</option>
+                        <option value="telefone">Telefone</option>
+                        <option value="whatsapp">WhatsApp</option>
+                    </select>
+
+                    <button class="button-enviar">Enviar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>2023 INFRA Data&reg; uma marca Infracommerce&reg;. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="./scripts.js"></script>
+</body>
+</html>
